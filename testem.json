@@ -1,8 +1,13 @@
 {
-  "framework": "mocha",
   "launchers": {
     "Mocha": {
       "command": "mocha test/*.js"
     }
-  }
+  },
+  "launch_in_dev": [ "Mocha" ],
+  "launch_in_ci": [ "Mocha" ],
+  "src_files": [
+    "app/**/*.js",
+    "test/**/*.js"
+  ]
 }
