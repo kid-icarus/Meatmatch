@@ -1,0 +1,8 @@
+{
+  "framework": "mocha",
+  "launchers": {
+    "Mocha": {
+      "command": "mocha test/*.js"
+    }
+  }
+}

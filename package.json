@@ -4,7 +4,7 @@
   "description": "Matching meat gifs to messagses",
   "main": "index.js",
   "scripts": {
-    "test": "testem"
+    "tdd": "testem"
   },
   "repository": {
     "type": "git",
@@ -18,5 +18,10 @@
   "license": "BSD-2-Clause",
   "bugs": {
     "url": "https://github.com/kid-icarus/Meatmatch/issues"
+  },
+  "devDependencies": {
+    "testem": "~0.5.12",
+    "chai": "~1.8.1",
+    "mocha": "~1.15.1"
   }
 }
