@@ -5,9 +5,8 @@ block content
     img(src=match.gif, alt='')
     form(method='post', action='/')
       ul.answers
-        each answer in match.answers
+        each answer, index in match.answers
           li
-            label
-              input(type='radio', name='answer', value=answer)
-              = answer
-      input(type='submit', value='Final Answer')
+            input(type='radio', name='answer', value=answer, id='answer-'+index)
+            label(for='answer-'+index)= answer
+      input.button(type='submit', value='Final Answer')

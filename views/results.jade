@@ -1,7 +1,7 @@
 extend layout
 
 block content
-  - var answerCorrect = userAnswer === match.rightAnswer;
+  - var isCorrect = userAnswer === match.rightAnswer;
   .match
     img(src=match.gif, alt='')
     ul.answers
@@ -10,6 +10,5 @@ block content
         - if (answer === userAnswer) classes.push('chosen')
         - if (answer === match.rightAnswer) classes.push('correct')
         li(class=classes.join(' '))= answer
-    h2= answerCorrect ? 'Correct' : 'Wrong'
-  p
-    a.more-meat(href='/') More Meat
+    h2(class=isCorrect ? 'correct' : '')= isCorrect ? 'Correct' : 'Wrong'
+    a.button(href='/') More Meat

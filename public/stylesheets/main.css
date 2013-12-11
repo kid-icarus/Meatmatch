@@ -10,9 +10,9 @@ html, body {
 
 body {
   font-family:'Helvetica Neue', sans-serif;
-  font-size:20px;
+  font-size:16px;
   background:#f181ad;
-  color:#555;
+  color:#3a061b;
 }
 
 ul {
@@ -20,8 +20,10 @@ ul {
 }
 
 .page-wrapper {
-  max-width:320px;
+  width:100%;
+  max-width:300px;
   margin:0 auto;
+  padding-bottom:8px;
 }
 
 .page-wrapper > h1 {
@@ -32,17 +34,21 @@ ul {
 
 .match {
   background:#fff;
-  padding:10px;
   border-radius:4px;
+  padding:10px 0;
 }
 
 .match img {
-  width:100%;
+  display:block;
+  width:210px;
+  margin:0 auto;
+  border-radius:3px;
 }
 
-.match input[type="submit"] {
-  width:100%;
+.button {
   display:block;
+  width:90%;
+  margin:0 auto;
   border:0;
   background:#f181ad;
   color:#fff;
@@ -51,54 +57,65 @@ ul {
   font-family:'Helvetica Neue', sans-serif;
   cursor:pointer;
   border-radius:3px;
+  text-decoration:none;
+  text-align:center;
 }
 
-.match input[type="submit"]:hover, .match input[type="submit"]:focus {
+.button:hover, .button:focus {
   background:#d81863;
 }
 
 .match h2 {
-  width:100;
   text-align:center;
+  font-size:42px;
+  color:#d81863;
+  margin-bottom:10px;
+  text-transform:uppercase;
+}
+
+.match h2.correct {
+  color:#61d317;
+}
+
+.meatspace-logo {
+  display:block;
+  width:100%;
+  margin:16px 0;
 }
 
 .warming-message {
-  font-size:15px;
+  font-size:14px;
+  text-align:center;
 }
 
 .answers {
-  margin:24px 0;
+  margin:10px 0;
 }
 
 .answers li {
-  padding:5px 0;
+  padding:8px 10px 8px 28px;
+  position:relative;
+  word-break:break-word;
 }
 
-.answers .correct {
-  background:blue;
+.answers li:nth-child(odd) {
+  background:#fdecf3;
 }
 
-.answers .chosen {
-  background:red;
+.answers li.chosen {
+  background:#d5bef8;
 }
 
-.answers .correct.chosen {
-  background:green;
+.answers li.correct {
+  background:#cbf6af;
 }
 
 .answers input[type="radio"] {
-  margin-right:10px;
+  position:absolute;
+  left:10px;
+  top:10px;
 }
 
-.more-meat {
-  display:block;
-  background:#d81863;
-  padding:10px 0;
-  text-decoration:none;
-  color:#fff;
-  text-transform:uppercase;
-  font-weight:bold;
-  text-align:center;
-  border-radius:4px;
-  margin:16px 0;
+.answers input[type="radio"]:checked + label {
+  background:#d5bef8;
 }
