@@ -2,12 +2,14 @@ extend layout
 
 block content
   - var answerCorrect = userAnswer === match.rightAnswer;
-  img(src=match.gif, alt='')
-  ul.answers
-    each answer in match.answers
-      - var classes = []
-      - if (answer === userAnswer) classes.push('chosen')
-      - if (answer === match.rightAnswer) classes.push('correct')
-      li(class=classes.join(' '))= answer
-  h2= answerCorrect ? 'Correct' : 'Wrong'
-  a.more-meat(href='/') More Meat
+  .match
+    img(src=match.gif, alt='')
+    ul.answers
+      each answer in match.answers
+        - var classes = []
+        - if (answer === userAnswer) classes.push('chosen')
+        - if (answer === match.rightAnswer) classes.push('correct')
+        li(class=classes.join(' '))= answer
+    h2= answerCorrect ? 'Correct' : 'Wrong'
+  p
+    a.more-meat(href='/') More Meat

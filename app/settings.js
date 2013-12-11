@@ -5,7 +5,7 @@ module.exports = function(app, nconf) {
   app.set('views', path.resolve(__dirname, '..', 'views'));
   app.set('view engine', 'jade');
   app.set('view options', { layout: false });
-  app.use(express.static(__dirname + '/public'));
+  app.use(express.static(path.resolve(__dirname, '..', 'public')));
   app.use(express.bodyParser());
   app.use(express.cookieParser());
   app.use(express.session({
