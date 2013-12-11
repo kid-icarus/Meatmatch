@@ -1,0 +1,12 @@
+extend layout
+
+block content
+  img(src=match.gif, alt='')
+  form(method='post', action='/')
+    ul.answers
+      each answer in match.answers
+        li
+          label
+            input(type='radio', name='answer', value=answer)
+            = answer
+    input(type='submit', value='Final Answer')

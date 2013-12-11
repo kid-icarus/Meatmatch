@@ -3,7 +3,9 @@ var ChatList = function() {
 };
 
 ChatList.prototype.push = function(chat) {
-  this.chats.push(chat);
+  if (chat.value.message) {
+    this.chats.push(chat);
+  }
   if (this.chats.length > 200) {
     this.chats.shift();
   }

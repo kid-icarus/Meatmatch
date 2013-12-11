@@ -3,8 +3,10 @@
   "version": "0.0.0",
   "description": "Matching meat gifs to messagses",
   "main": "index.js",
+  "private": true,
   "scripts": {
-    "tdd": "testem"
+    "tdd": "testem",
+    "start": "node index.js"
   },
   "repository": {
     "type": "git",
@@ -12,16 +14,25 @@
   },
   "keywords": [
     "fun",
-    "stuff"
+    "meatspaces"
   ],
   "author": "cool dudes",
-  "license": "BSD-2-Clause",
+  "license": "MIT",
   "bugs": {
     "url": "https://github.com/kid-icarus/Meatmatch/issues"
   },
   "devDependencies": {
     "testem": "~0.5.12",
     "chai": "~1.8.1",
-    "mocha": "~1.15.1"
+    "mocha": "~1.15.1",
+    "socket.io": "~0.9.16"
+  },
+  "dependencies": {
+    "express": "~3.4.6",
+    "nconf": "~0.6.9",
+    "socket.io-client": "~0.9.16",
+    "jade": "~0.35.0",
+    "connect": "~2.11.2",
+    "knuth-shuffle": "~1.0.0"
   }
 }
