@@ -33,6 +33,7 @@
     "socket.io-client": "~0.9.16",
     "jade": "~0.35.0",
     "connect": "~2.11.2",
-    "knuth-shuffle": "~1.0.0"
+    "knuth-shuffle": "~1.0.0",
+    "newrelic": "~1.2.0"
   }
 }
