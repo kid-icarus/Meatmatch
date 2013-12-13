@@ -123,14 +123,26 @@ ul {
 }
 
 .footer {
+  color:#bd3d70;
   font-size:12px;
   padding:8px 10px 0 10px;
+  overflow:hidden;
 }
 
 .stats {
+  float:left;
   display:none;
 }
 
 .localstorage .stats {
   display:block;
+}
+
+.github {
+  float:right;
+  color:#bd3d70;
+}
+
+.github:hover, .github:focus {
+  color:#31061b;
 }
