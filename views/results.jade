@@ -12,3 +12,11 @@ block content
         li(class=classes.join(' '))= answer
     h2(class=isCorrect ? 'correct' : '')= isCorrect ? 'Correct' : 'Wrong'
     a.button(href='/') More Meat
+  .footer
+    .stats
+      span.stats-correct
+      /
+      span.stats-total
+  
+  script(type='text/javascript').
+    window.isCorrect = #{isCorrect};

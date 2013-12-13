@@ -119,3 +119,16 @@ ul {
 .answers input[type="radio"]:checked + label {
   background:#d5bef8;
 }
+
+.footer {
+  font-size:12px;
+  padding:8px 10px 0 10px;
+}
+
+.stats {
+  display:none;
+}
+
+.localstorage .stats {
+  display:block;
+}
