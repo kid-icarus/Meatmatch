@@ -46,6 +46,7 @@ ul {
 }
 
 .button {
+  -webkit-appearance:none;
   display:block;
   width:90%;
   margin:0 auto;
@@ -55,6 +56,7 @@ ul {
   padding:10px 0;
   font-size:20px;
   font-family:'Helvetica Neue', sans-serif;
+  font-weight:bold;
   cursor:pointer;
   border-radius:3px;
   text-decoration:none;
